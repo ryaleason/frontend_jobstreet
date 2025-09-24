@@ -94,7 +94,7 @@ const Sidebar = () => {
       id: 'profile',
       label: 'Profile',
       icon: User,
-      path: `/user/profile/${user.id}`
+      path: `/user/profile`
     },
     {
       id: 'settings',
