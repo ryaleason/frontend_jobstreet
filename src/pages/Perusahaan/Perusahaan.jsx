@@ -25,7 +25,7 @@ const Perusahaan = () => {
   const [countData , setCountData] = useState();
 
   const handleCount=async ()=>{
-    const response = await axios.get("http://127.0.0.1:8000/api/perusahaan/datacount",{
+    const response = await axios.get("https://ryal-jobstreet.rakarawr.com/api/perusahaan/datacount",{
       headers: {
         Authorization : `Bearer ${token}`
       }
@@ -196,7 +196,7 @@ const Perusahaan = () => {
                     <div className="relative">
                       <div className="w-16 h-16 bg-white rounded-2xl shadow-lg border-2 border-white/50 overflow-hidden group-hover:scale-105 transition-transform duration-300">
                         <img
-                          src={`http://127.0.0.1:8000/storage/${item.logo}`}
+                          src={`https://ryal-jobstreet.rakarawr.com/storage/${item.logo}`}
                           alt={`Logo ${item.nama}`}
                           className="w-full h-full object-cover"
                           onError={(e) => {
